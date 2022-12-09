@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>日替わり一人称</title>
+        <meta name="google-site-verification" content="JvPUEVWqeeWNVmad3ze-5OvUBGOvc58_r8M9EIuqrBE" />
+    </head>
+
+    <body>
+        <!-- HTML -->
+        <p>
+            今日の一人称は
+                <div id = "a">
+                        xxx
+                </div>
+            <br> 
+            です！
+        </p>
+        <p>
+            今日の語尾は
+                <div id = "zzz">
+                    zzz
+                </div>
+                <br>
+            です！
+        </p>
+        <br>
+
+        <p>
+            明日の一人称は
+            <div id = "b">
+                yyy
+            </div>
+            <br> 
+            です！
+        </p>
+        <!--CSS-->
+                <style>
+                    body{
+                        font-size: 80px;
+                        background-image: url(
+                            https://images.pexels.com/photos/9851262/pexels-photo-9851262.jpeg?auto=compress&cs=tinysrgb&w=600
+                        )
+                    }
+                    #a,#b,#zzz{
+                        font-size: 130px;
+                        color: red;
+                    }
+                    
+                    html{                                   
+                        color: #000000;
+                    }
+                </style>
+        <!--CSS-->
+        <!--JavaScript-->
+                <script>
+                    // 日にちと#aの要素を取得    
+                    const now = new Date();
+                    const nownow = (now.getDate()) 
+                    const docc = document.querySelector('#a');
+                    //日にちごとに一人称を表示
+                    switch (nownow) {
+                        case 1:docc.textContent = '僕';
+                        break;
+                        case 2:docc.textContent = 'あたい';
+                        break;
+                        case 3:docc.textContent = '私';
+                        break;
+                        case 4:docc.textContent = '俺';
+                        break;
+                        case 5:docc.textContent = 'おいら';
+                        break;
+                        case 6:docc.textContent = 'おら';
+                        break;
+                        case 7:docc.textContent = 'おいどん';
+                        break;
+                        case 8:docc.textContent = 'ぼくちん';
+                        break;
+                        case 9:docc.textContent = 'うち';
+                        break;
+                        case 10:docc.textContent = 'おれさま';
+                        break;
+                        case 11:docc.textContent = '小生';
+                        break;
+                        case 12:docc.textContent = '俺ちゃま';
+                        break;
+                        case 13:docc.textContent = 'ぼくちゃま';
+                        break;
+                        case 14:docc.textContent = '麻呂';
+                        break;
+                        case 15:docc.textContent = '拙者';
+                        break;
+                        case 16:docc.textContent = 'ワイ;';
+                        break;
+                        case 17:docc.textContent = 'me';
+                        break;
+                        case 18:docc.textContent = '某';
+                        break;
+                        case 19:docc.textContent = 'あちき';
+                        break;
+                        case 20:docc.textContent = 'わし';
+                        break;
+                        case 21:docc.textContent = '鈴木';
+                        break;
+                        case 22:docc.textContent = 'わっちゃ';
+                        break;
+                        case 23:docc.textContent = 'ひろゆき';
+                        break;
+                        case 24:docc.textContent = '秀幸';
+                        break;
+                        case 25:docc.textContent = 'ひで';
+                        break;
+                        case 26:docc.textContent = 'わらわ';
+                        break;
+                        case 27:docc.textContent = 'あたくし';
+                        break;
+                        case 28:docc.textContent = 'おれっち';
+                        break;
+                        case 29:docc.textContent = '我';
+                        break;
+                        case 30:docc.textContent = '吾輩';
+                        break;
+                        case 31:docc.textContent = '汝';
+                        break;
+                        default: docc.textContent = 'error';
+                    }
+
+                    //rundom
+                    let length = 30;
+                    const YYY = document.querySelector('#yyy');
+                    const ZZZ = document.querySelector('#zzz');
+                    const rundom = Math.floor(Math.random() * length ) + 1;
+                    
+                    //語尾を定義
+                    function gobi() {
+                        switch (rundom) {
+                            case 1:ZZZ.textContent = '〜にゃん';
+                            break;
+                            case 2:ZZZ.textContent = '〜わん';
+                            break;
+                            case 3:ZZZ.textContent = '〜これが私の意見だけど';
+                            break;
+                            case 4:ZZZ.textContent = 'ちょる';
+                            break;
+                            case 5:ZZZ.textContent = 'すっぞ';
+                            break;
+                            case 6:ZZZ.textContent = '嘘だけど';
+                            break;
+                            case 7:ZZZ.textContent = 'しらんけど';
+                            break;
+                            case 8:ZZZ.textContent = '・・・多分';
+                            break;
+                            case 9:ZZZ.textContent = 'だよ〜';
+                            break;
+                            case 10:ZZZ.textContent = 'よ〜';
+                            break;
+                            case 11:ZZZ.textContent = 'なのだよ〜';
+                            break;
+                            case 12:ZZZ.textContent = 'ます';
+                            break;
+                            case 13:ZZZ.textContent = 'っす';
+                            break;
+                            case 14:ZZZ.textContent = 'っしょ';
+                            break;
+                            case 15:ZZZ.textContent = 'や';
+                            break;
+                            case 16:ZZZ.textContent = 'やで';;
+                            break;
+                            case 17:ZZZ.textContent = 'すっぞ';
+                            break;
+                            case 18:ZZZ.textContent = 'だ';
+                            break;
+                            case 19:ZZZ.textContent = 'ござる';
+                            break;
+                            case 20:ZZZ.textContent = 'ありまする';
+                            break;
+                            case 21:ZZZ.textContent = 'なのであります';
+                            break;
+                            case 22:ZZZ.textContent = 'ございます';
+                            break;
+                            case 23:ZZZ.textContent = 'よ';
+                            break;
+                            case 24:ZZZ.textContent = 'なのです';
+                            break;
+                            case 25:ZZZ.textContent = 'なのでアール';
+                            break;
+                            case 26:ZZZ.textContent = 'だべ';
+                            break;
+                            case 27:ZZZ.textContent = 'お';
+                            break;
+                            case 28:ZZZ.textContent = 'なのじゃ';
+                            break;
+                            case 29:ZZZ.textContent = 'である';
+                            break;
+                            case 30:ZZZ.textContent = 'ぬ';
+                            break;
+                            case 31:ZZZ.textContent = 'ちょる';
+                            break;
+                            default:ZZZ.textContent = 'error';
+                        };  
+                    };   
+
+                    function aaa(){
+                        ZZZ.textContent = '???'
+                    }
+                    aaa();
+                    //日付変更時にリロード
+                    function doReload() {
+                        window.location.reload();
+                    };
+                    const nownownow = now.getHours();
+                    const nownownownow = now.getMinutes();
+                    if (nownownow >= 23 && nownownownow <45) {
+                        gobi()
+                    }
+                    else{
+                        setTimeout(doReload,600000);
+                    };
+                    //明日の日にちを取得
+                    const tomorrow = nownow + 1;
+                    const dddoooccc = document.querySelector('#b');
+                    //明日の一人称を表示
+                    switch (tomorrow) {
+                        case 2:dddoooccc.textContent = 'あたい';
+                        break;
+                        case 3:dddoooccc.textContent = '私';
+                        break;
+                        case 4:dddoooccc.textContent = '俺';
+                        break;
+                        case 5:dddoooccc.textContent = 'おいら';
+                        break;
+                        case 6:dddoooccc.textContent = 'おら';
+                        break;
+                        case 7:dddoooccc.textContent = 'おいどん';
+                        break;
+                        case 8:dddoooccc.textContent = 'ぼくちん';
+                        break;
+                        case 9:dddoooccc.textContent = 'うち';
+                        break;
+                        case 10:dddoooccc.textContent = 'おれさま';
+                        break;
+                        case 11:dddoooccc.textContent = '小生';
+                        break;
+                        case 12:dddoooccc.textContent = '俺ちゃま';
+                        break;
+                        case 13:dddoooccc.textContent = 'ぼくちゃま';
+                        break;
+                        case 14:dddoooccc.textContent = '麻呂';
+                        break;
+                        case 15:dddoooccc.textContent = '拙者';
+                        break;
+                        case 16:dddoooccc.textContent = 'ワイ;';
+                        break;
+                        case 17:dddoooccc.textContent = 'me';
+                        break;
+                        case 18:dddoooccc.textContent = '某';
+                        break;
+                        case 19:dddoooccc.textContent = 'あちき';
+                        break;
+                        case 20:dddoooccc.textContent = 'わし';
+                        break;
+                        case 21:dddoooccc.textContent = '鈴木';
+                        break;
+                        case 22:dddoooccc.textContent = 'わっちゃ';
+                        break;
+                        case 23:dddoooccc.textContent = 'ひろゆき';
+                        break;
+                        case 24:dddoooccc.textContent = '秀幸';
+                        break;
+                        case 25:dddoooccc.textContent = 'ひで';
+                        break;
+                        case 26:dddoooccc.textContent = 'わらわ';
+                        break;
+                        case 27:dddoooccc.textContent = 'あたくし';
+                        break;
+                        case 28:dddoooccc.textContent = 'おれっち';
+                        break;
+                        case 29:dddoooccc.textContent = '我';
+                        break;
+                        case 30:dddoooccc.textContent = '吾輩';
+                        break;
+                        case 31:dddoooccc.textContent = '汝';
+                        break;
+                        case 32:dddoooccc.textContent = '僕';
+                        break;
+                        default: dddoooccc.textContent = 'error';
+                    };
+                </script>
+        <!--JavaScript-->      
+    </body>
+</html>
